@@ -1,9 +1,18 @@
-0	1	mBPic.exe -MSF -DBG -pP16F84A -LHF -GC -DL -O11111114 -fo4 -N"D:\MIKROBASIC\84_7SEG\84_7SEG.mbppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroBasic PRO for PIC\defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroBasic PRO for PIC\Uses\P16\" -SP"D:\MIKROBASIC\84_7SEG\" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CType.mcl" "__Lib_String.mcl" "__Lib_CStdlib.mcl" "__Lib_MemManager.mcl" "__Lib_Conversions.mcl" "__Lib_Time.mcl" "__Lib_Trigon.mcl" "__Lib_Trigonometry.mcl" "__Lib_Button.mcl" "__Lib_Keypad4x4.mcl" "__Lib_Manchester.mcl" "__Lib_OneWire.mcl" "__Lib_PS2.mcl" "__Lib_Sound.mcl" "__Lib_SoftI2C.mcl" "__Lib_SoftSPI.mcl" "__Lib_SoftUART.mcl" "__Lib_EEPROM.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl" "__Lib_S1D13700.mcl" "84_7SEG.mbas"	 
+0	1	mBPic.exe -MSF -DBG -pP16F84A -Y -DL -O11111114 -fo4 -N"C:\MIKROBASIC\84_7SEG\84_7SEG.mbppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroBasic PRO for PIC\defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroBasic PRO for PIC\Uses\P16\" -SP"C:\MIKROBASIC\84_7SEG\" -SP"D:\MIKROBASIC\84_7SEG\" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CType.mcl" "__Lib_String.mcl" "__Lib_CStdlib.mcl" "__Lib_MemManager.mcl" "__Lib_Conversions.mcl" "__Lib_Time.mcl" "__Lib_Trigon.mcl" "__Lib_Trigonometry.mcl" "__Lib_Button.mcl" "__Lib_Keypad4x4.mcl" "__Lib_Manchester.mcl" "__Lib_OneWire.mcl" "__Lib_PS2.mcl" "__Lib_Sound.mcl" "__Lib_SoftI2C.mcl" "__Lib_SoftSPI.mcl" "__Lib_SoftUART.mcl" "__Lib_EEPROM.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl" "__Lib_S1D13700.mcl" "84_7SEG.mbas"	 
+warning: 0	1501	Specified search path does not exist: 'D:\MIKROBASIC\84_7SEG'	 
 diagnostics: 0	155	Available RAM: 52 [bytes], Available ROM: 1024 [bytes]	 
-diagnostics: 0	133	Compilation Started	D:\MIKROBASIC\84_7SEG\84_7SEG.mbas
-diagnostics: 0	134	Compiled Successfully	D:\MIKROBASIC\84_7SEG\84_7SEG.mbas
-diagnostics: 0	139	All files Compiled in 94 ms	 
+diagnostics: 0	133	Compilation Started	C:\Users\Public\Documents\Mikroelektronika\mikroBasic PRO for PIC\defs\P16F84A.mbas
+hint: 1	1015	Hint: Compiling unit "C:\Users\Public\Documents\Mikroelektronika\mikroBasic PRO for PIC\defs\P16F84A.mbas"	P16F84A.mbas
+hint: 191	1010	Hint: Unit "P16F84A.mbas" has been recompiled	P16F84A.mbas
+diagnostics: 0	134	Compiled Successfully	C:\Users\Public\Documents\Mikroelektronika\mikroBasic PRO for PIC\defs\P16F84A.mbas
+diagnostics: 0	133	Compilation Started	C:\MIKROBASIC\84_7SEG\84_7SEG.mbas
+hint: 1	1015	Hint: Compiling unit "C:\MIKROBASIC\84_7SEG\84_7SEG.mbas"	84_7SEG.mbas
+hint: 57	1010	Hint: Unit "84_7SEG.mbas" has been recompiled	84_7SEG.mbas
+diagnostics: 0	134	Compiled Successfully	C:\MIKROBASIC\84_7SEG\84_7SEG.mbas
+diagnostics: 0	139	All files Compiled in 32 ms	 
+hint: 0	1144	Used RAM (bytes): 9 (17%)  Free RAM (bytes): 43 (83%)	Used RAM (bytes): 9 (17%)  Free RAM (bytes): 43 (83%)
+hint: 0	1144	Used ROM (program words): 238 (23%)  Free ROM (program words): 786 (77%)	Used ROM (program words): 238 (23%)  Free ROM (program words): 786 (77%)
 diagnostics: 0	145	Project Linked Successfully	84_7SEG.mbppi
-diagnostics: 0	140	Linked in 327 ms	 
-diagnostics: 0	141	Project '84_7SEG.mbppi' completed: 514 ms	 
-diagnostics: 0	103	Finished successfully: 22 oct 2016, 00:36:58	84_7SEG.mbppi
+diagnostics: 0	140	Linked in 62 ms	 
+diagnostics: 0	141	Project '84_7SEG.mbppi' completed: 187 ms	 
+diagnostics: 0	103	Finished successfully: 05 feb 2022, 22:55:16	84_7SEG.mbppi
