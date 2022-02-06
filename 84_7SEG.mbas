@@ -1,0 +1,55 @@
+program _84_7SEG                     'Jorge Alviarez, Maracay,  15/10/16
+
+  SYMBOL PAUSA = DELAY_MS(2)
+DIM CONTADOR, N AS WORD
+    UNIDAD,CENTENA,DECENA AS BYTE
+    CONST DISPLAY AS BYTE[10] = (63,6,91,79,102,109,124,7,127,103)
+'#0=63=11 1111, #1=6=110, #2=91=101 1011, #3=79=100 1111, #4=102=110 0110  #5=109=110 1001, #6=124=111 1100,
+'--------PROCEDIMIENTO BCD------
+
+  SUB PROCEDURE CODBIN
+          CENTENA   = (CONTADOR / 100)MOD 10
+          DECENA    = (CONTADOR/10)MOD 10
+          UNIDAD    =  CONTADOR MOD 10
+  END SUB
+
+MAIN:
+ '------ CONFIGURACION DE LOS REGISTROS--------------
+
+             TRISA  =   %00101000   ' A3 COMO  ENTRADA AN3
+             TRISB  = %00000000   ' PUERTO B TODO  SALIDAS
+             CONTADOR  = 0
+             PORTB = 0
+             N = 0
+'-----INICIO-----------------
+WHILE 1
+   N = 0
+      CODBIN
+   DO
+         PORTB = DISPLAY[UNIDAD]
+       PORTA = %1
+       PAUSA
+
+        IF (CENTENA > 0) OR (DECENA > 0) THEN
+            PORTB = DISPLAY[DECENA]
+            PORTA = %10
+        END IF
+       PAUSA
+
+       IF CENTENA > 0 THEN
+          PORTB = DISPLAY[CENTENA]
+          PORTA = %100
+       END IF
+       PAUSA
+
+      N = N+1
+   LOOP UNTIL N  = 20
+   CONTADOR = CONTADOR + 1
+
+   IF CONTADOR > 999 THEN
+         CONTADOR = 0
+   END IF
+       
+
+WEND
+END.
