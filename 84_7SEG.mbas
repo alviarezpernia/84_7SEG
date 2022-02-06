@@ -15,6 +15,7 @@ DIM CONTADOR, N AS WORD
 
 MAIN:
  '------ CONFIGURACION DE LOS REGISTROS--------------
+ '............................................f
 
              TRISA  =   %00101000   ' A3 COMO  ENTRADA AN3
              TRISB  = %00000000   ' PUERTO B TODO  SALIDAS
